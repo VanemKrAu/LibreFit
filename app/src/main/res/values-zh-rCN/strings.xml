@@ -83,7 +83,7 @@
     <string name="equipment_dumbbell">哑铃</string>
     <string name="equipment_kettlebells">壶铃</string>
     <string name="app_works_without_permission">在未授权该权限的情况下，本应用仍能正常工作。</string>
-    <string name="app_name">LibrFit</string>
+    <string name="app_name">LibreFit</string>
     <string name="donators">捐赠者</string>
     <string name="volume">训练量</string>
     <string name="total_sets">总组数</string>

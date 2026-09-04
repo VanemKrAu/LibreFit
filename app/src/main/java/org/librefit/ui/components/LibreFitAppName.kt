@@ -25,10 +25,7 @@ import org.librefit.R
  * primary color.
  *
  * The app name is assembled from two independent strings ([R.string.app_name_first_part] and
- * [R.string.app_name_second_part]) instead of splitting [R.string.app_name] at hard-coded
- * character indices. This keeps the highlighted rendering robust for any translation of
- * [R.string.app_name] and independent of its length. Unlocalized values fall back to the
- * default (English) resources.
+ * [R.string.app_name_second_part])
  */
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable

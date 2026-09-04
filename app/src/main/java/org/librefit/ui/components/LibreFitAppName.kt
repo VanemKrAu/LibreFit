@@ -22,7 +22,13 @@ import org.librefit.R
 
 /**
  * It returns the app name with material theme style and with the word "Libre" colored with the
- * primary color
+ * primary color.
+ *
+ * The app name is assembled from two independent strings ([R.string.app_name_first_part] and
+ * [R.string.app_name_second_part]) instead of splitting [R.string.app_name] at hard-coded
+ * character indices. This keeps the highlighted rendering robust for any translation of
+ * [R.string.app_name] and independent of its length. Unlocalized values fall back to the
+ * default (English) resources.
  */
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
@@ -32,10 +38,10 @@ fun AnnotatedString.Builder.GetAppNameInAnnotatedBuilder(style: TextStyle = Mate
             color = MaterialTheme.colorScheme.primary
         ).toSpanStyle()
     ) {
-        append(stringResource(id = R.string.app_name).removeRange(5, 8))
+        append(stringResource(id = R.string.app_name_first_part))
     }
     withStyle(style = style.toSpanStyle()) {
-        append(stringResource(id = R.string.app_name).removeRange(0, 5))
+        append(stringResource(id = R.string.app_name_second_part))
     }
 }
 

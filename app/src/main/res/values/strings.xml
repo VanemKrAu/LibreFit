@@ -8,6 +8,8 @@
 
 <resources>
     <string name="app_name">LibreFit</string>
+    <string name="app_name_first_part">Libre</string>
+    <string name="app_name_second_part">Fit</string>
 
     <!--Navigation-->
     <string name="home">Home</string>
